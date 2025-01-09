@@ -1,3 +1,6 @@
+# Refer link on CI CD
+https://www.jetbrains.com/teamcity/ci-cd-guide/continuous-integration-vs-delivery-vs-deployment/
+
 Continuous integration (CI)
 Continuous integration (CI) is the practice of automatically checking your code changes to get rapid feedback on your work. With CI, each time you commit a change, your CI server runs a build and executes automated tests. These tests typically include unit tests, integration tests, and other checks like linting or static analysis. If any stage of the CI process fails, you receive automatic feedback so you can address the issue. The process starts again when you commit a fix.
 

@@ -1,0 +1,8 @@
+Continuous integration (CI)
+Continuous integration (CI) is the practice of automatically checking your code changes to get rapid feedback on your work. With CI, each time you commit a change, your CI server runs a build and executes automated tests. These tests typically include unit tests, integration tests, and other checks like linting or static analysis. If any stage of the CI process fails, you receive automatic feedback so you can address the issue. The process starts again when you commit a fix.
+
+Continuous delivery and continuous deployment (CD)
+Continuous delivery and continuous deployment (CD) pick up where CI ends. Both involve deploying a build artifact to one or more testing environments for further automated tests, such as end-to-end, GUI, performance, and security tests. A build must pass all of them successfully before being considered ready for release.
+
+As with CI, if a test fails during any CD phase, the process stops and the details are reported so you can investigate and fix the issue. Once a new build is ready, the process starts again from the beginning, going through all the CI steps before entering the CD phase.
+  

@@ -54,3 +54,11 @@ OS name: "xxxxxx", version: "xx.x", arch: "x86_64", family: "mac"
 
 
 
+% mkdir java-project
+% cd java-project 
+% mvn archetype:generate -DgroupId=com.datantar1.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+
+
+
+
+

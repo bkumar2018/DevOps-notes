@@ -1,0 +1,56 @@
+
+Rerfence link: https://www.digitalocean.com/community/tutorials/install-maven-mac-os
+
+
+Download Java for Mac OS:
+Go to the latest JDK GA release page and download the tar file for Mac OS. Java 13 GA Release URL: https://jdk.java.net/13/ Then extract it to the directory of your choice. I prefer to keep my JDK setup at “/Library/Java/JavaVirtualMachines/” directory.
+
+$ tar -xvf openjdk-13.0.1_osx-x64_bin.tar.gz
+$ sudo mv jdk-13.0.1.jdk /Library/Java/JavaVirtualMachines/
+
+
+Setting Environment Variables - JAVA_HOME and Path
+Open ~/.bash_profile
+
+JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home"
+PATH="${JAVA_HOME}/bin:${PATH}"
+export PATH
+
+To apply these environment variable changes, run below command:
+$ source .bash_profile
+
+Verify JDK installation by running below command: 
+$ java --version
+
+Output as below:
+java 16.0.1 2021-04-20
+Java(TM) SE Runtime Environment (build 16.0.1+9-24)
+Java HotSpot(TM) 64-Bit Server VM (build 16.0.1+9-24, mixed mode, sharing)
+
+
+Now Install Maven on Mac OS:
+Go to the Maven Download site: https://maven.apache.org/download.cgi Download the “Binary tar.gz archive” file
+
+$ tar -xvf apache-maven-3.6.3-bin.tar.gz
+
+Setting Maven Environment Variables - M2_HOME and Path
+Open ~/.bash_profile
+
+export M2_HOME="/Users/pankaj/Downloads/apache-maven-3.6.3"
+PATH="${M2_HOME}/bin:${PATH}"
+export PATH
+
+run below command to apply env variables:
+$ source ~/.bash_profile
+
+Verify Maven installation by running below command:
+$ mvn --version
+
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: /Users/chanchal/biru/apache-maven-3.9.9
+Java version: 16.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "xxxxxx", version: "xx.x", arch: "x86_64", family: "mac"
+
+
+
